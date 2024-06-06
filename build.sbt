@@ -11,5 +11,6 @@ lazy val root = (project in file("."))
       "org.apache.flink" % "flink-runtime-web" % flinkVersion,
       "org.apache.flink" %% "flink-scala" % flinkVersion,
       "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
-      "ch.qos.logback" % "logback-classic" % "1.2.3")
+      "ch.qos.logback" % "logback-classic" % "1.2.3"),
+    Compile / run / fork := true
   )
